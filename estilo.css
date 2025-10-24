@@ -1,12 +1,12 @@
 body{
     width: 1400px;
-    height: 1000px;
-    background-color: azure;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
 }
 header{
     background-color: rgb(30, 30, 254);
-    color: aliceblue;
+    color: rgb(216, 219, 252);
     padding: 0 5px 0 5px ;
     font-size: 43px;
     font-family: 'Times New Roman', Times, serif;
@@ -15,11 +15,49 @@ header{
 h1{
     margin:0;
 }
+nav{
+    height: 50px;
+}
 nav>a{
-    padding: 5px;
+    display: inline-block;
+    padding: 10px 5px 5px 5px;
     width: 100px;
     margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: mediumseagreen;
+    transition: width 0.3s ease;
+}
+a:hover::after {
+    width: 100%;
 }
 #sesion{
-    margin-left: 340px;
+    margin-left: 705px;
+}
+#logoSimple {
+  width: 300px;
+  height: auto;
+}
+#contenedor1, #contenedor2{
+    display: inline-block;
+    vertical-align: top;
+}
+#contenedor1{
+    background-color: blueviolet;
+    width: 300px;
+    height: 700px;
+}
+#contenedor2{
+    background-color: chocolate;
+}
+form{
+    background-color: blue;
 }
