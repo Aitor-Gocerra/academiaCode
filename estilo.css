@@ -9,11 +9,12 @@ header{
     color: rgb(216, 219, 252);
     padding: 0 5px 0 5px ;
     font-size: 43px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
-h1{
+h1, p{
     margin:0;
+    font-family: 'Poppins', sans-serif;
 }
 nav{
     height: 50px;
@@ -22,6 +23,7 @@ nav>a{
     display: inline-block;
     padding: 10px 5px 5px 5px;
     width: 100px;
+    margin-top: 5px;
     margin-left: 20px;
     text-decoration: none;
     position: relative;
@@ -40,7 +42,7 @@ a:hover::after {
     width: 100%;
 }
 #sesion{
-    margin-left: 705px;
+    margin-left: 745px;
 }
 #logoSimple {
   width: 300px;
@@ -49,6 +51,7 @@ a:hover::after {
 #contenedor1, #contenedor2{
     display: inline-block;
     vertical-align: top;
+    padding: 10px;
 }
 #contenedor1{
     background-color: blueviolet;
@@ -56,8 +59,17 @@ a:hover::after {
     height: 700px;
 }
 #contenedor2{
-    background-color: chocolate;
+    background-color: rgb(77, 69, 244);
+    width: 1050px;
+    height: 700px;
+
 }
+
 form{
-    background-color: blue;
+    background-color: rgba(171, 168, 71, 0.282);
+    width: 300px;
+    height: 400px;
+    margin: 40px 375px 0 375px;
+    padding: 10px;
+    border-radius: 8px;
 }
