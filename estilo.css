@@ -22,9 +22,9 @@ nav{
 nav>a{
     display: inline-block;
     padding: 10px 5px 5px 5px;
-    width: 120px;
+    width: 85px;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 40px;
     text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -43,11 +43,8 @@ a:hover::after {
     width: 100%;
 }
 #sesion{
-    /* margin-left: 645px; */
     width: 110px;
-    position: absolute;
-    top: 130px;
-    left: 1350px;
+    float: right;
 }
 #logoSimple {
     width: 300px;
@@ -69,6 +66,12 @@ a:hover::after {
     width: 300px;
     height: 700px;
     color:#5dade2;
+}
+#contenedor1 i{
+    font-size: 32px;
+    position: absolute;
+    top: 868px;
+    left: 270px;
 }
 #contenedor2{
     background-color: #5dade2;
@@ -132,8 +135,13 @@ footer{
     background-color: #2c3e50;
     color: #ffffff;
     padding: 0 5px 0 5px ;
-    font-size: 9px;
+    font-size: 5px;
     font-family: "Bitcount Grid Single", system-ui;
     text-align: center;
     margin-top: 10px;
+}
+footer i {
+    font-size: 32px;
+    margin: 10px;
+    /* o el tamaño que quieras: 2rem, 2em, etc. */
 }
