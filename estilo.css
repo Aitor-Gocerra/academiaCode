@@ -10,7 +10,6 @@ html{
 }
 body{
     width: 1400px;
-    height: 900px;
     background-color: #01191f;
     margin: 0 auto;
 }
@@ -28,6 +27,10 @@ h1, p{
 }
 nav{
     height: 50px;
+    position: sticky;
+    top: 10px;
+    background-color: #01191f;
+    z-index: 1000;
 }
 nav>a{
     display: inline-block;
@@ -84,6 +87,13 @@ a:hover::after {
     top: 868px;
     left: 270px;
     color: #ff6b6b;
+}
+#arriba{
+    position: fixed;
+    bottom: 90px;
+    left: 50px;
+    z-index: 1000;
+    text-decoration: none;
 }
 #contenedor2{
     background-color: #5dade2;
@@ -145,13 +155,10 @@ input[type="reset"]{
 #contenedorPrincipal{
     height: 1400px;
     background-color: #ff6b6b;
-    overflow: auto;
 }
 footer{
-    position: sticky;
     width: 1390px;
-    bottom: 0;
-    height: 80px;
+    height: 70px;
     background-color: #01191f;
     color: #3b9dff;
     padding: 0 5px 0 5px ;
