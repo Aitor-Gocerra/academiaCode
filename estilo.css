@@ -29,7 +29,7 @@ nav{
     height: 50px;
     position: sticky;
     top: 10px;
-    background-color: #01191f;
+    background-color: #ff6b6b;
     z-index: 1000;
 }
 nav>a{
@@ -41,7 +41,7 @@ nav>a{
     text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
-    color:#3b9dff
+    color:#01191f;
 }
 a::after {
     content: '';
