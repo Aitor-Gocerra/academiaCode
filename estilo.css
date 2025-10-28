@@ -90,15 +90,16 @@ a:hover::after {
 }
 #arriba{
     position: fixed;
-    bottom: 90px;
-    left: 50px;
+    bottom: 20px;
+    left: 220px;
     z-index: 1000;
     text-decoration: none;
+    color: white;
 }
 #contenedor2{
     background-color: #5dade2;
-    width: 1058px;
-    height: 700px;
+    width: 1059px;
+    height: 1400px;
 }
 form{
     background-color: #ecf0f1;
@@ -154,7 +155,7 @@ input[type="reset"]{
 }
 #contenedorPrincipal{
     height: 1400px;
-    background-color: #ff6b6b;
+    background-color: #01191f;
 }
 footer{
     width: 1390px;
