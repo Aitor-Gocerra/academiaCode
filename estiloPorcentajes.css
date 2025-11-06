@@ -6,8 +6,8 @@ body{
 header{
     background-color: #01191f;
     color: #3b9dff;
-    padding: 0 0.36% 0 0.36%; /* 5px de 1400px = 0.36% */
-    font-size: 43px;
+    padding: 0 0.3571428571% 0 0.3571428571%; /* 5px de 1400px = 0.3571428571% */
+    font-size: 2.6875rem;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -16,14 +16,14 @@ h1, p{
     font-family: 'Poppins', sans-serif;
 }
 nav{
-    height: 50px;
+    height: auto; /* RECOMENDABLE */
 }
 nav>a{
     display: inline-block;
-    padding: 10px 0.36% 5px 0.36%; /* 5px de 1400px = 0.36% */
-    width: 6.07%; /* 85px de 1400px = 6.07% */
-    margin-top: 5px;
-    margin-left: 2.86%; /* 40px de 1400px = 2.86% */
+    padding: 0.7142857143% 0.3571428571% 0.3571428571% 0.3571428571%; /* El padding superior e inferior se calculan tbn con el width */
+    width: 6.071428571%; /* 85px de 1400px = 6.07% */
+    margin-top: 0.3571428571% ;
+    margin-left: 2.857142857%; /* 40px de 1400px = 2.86% */
     text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -43,51 +43,50 @@ a:hover::after {
     width: 100%;
 }
 #sesion{
-    width: 7.86%; /* 110px de 1400px = 7.86% */
+    width: 7.857142857%; /* 110px de 1400px = 7.86% */
     float: right;
 }
 #logoSimple {
-    width: 21.43%; /* 300px de 1400px = 21.43% */
+    width: 21.42857143%; /* 300px de 1400px = 21.43% */
     height: auto;
 }
 #logoAcad{
-    width: 28.57%; /* 400px de 1400px = 28.57% */
+    width: 28.57142857%; /* 400px de 1400px = 28.57% */
     height: auto;
-    margin-bottom: 30px;
-    margin-top: 15px;
+    margin-bottom: 2.142857143%;
+    margin-top: 1.071428571%;
 }
 #contenedor1, #contenedor2{
     display: inline-block;
     vertical-align: top;
-    padding: 10px;
+    padding: 0.7142857143%;
 }
 #contenedor1{
     background-color: #01191f;
-    width: 21.43%; /* 300px de 1400px = 21.43% */
-    height: 700px;
+    width: 21.42857143%; /* 300px de 1400px = 21.43% */
+    height: auto;
     color:#5dade2;
     padding-top: 0;
 }
 #contenedor1 i{
-    font-size: 32px;
+    font-size: 2rem;
     position: absolute;
     top: 868px;
-    left: 19.29%; /* 270px de 1400px = 19.29% */
+    left: 19.28571429%; /* 270px de 1400px = 19.29% */
     color: #ff6b6b;
 }
 #contenedor2{
     background-color: #5dade2;
-    width: 75.36%; /* 1055px de 1400px = 75.36% */
+    width: 75.35714286%; /* 1055px de 1400px = 75.36% */
     height: 700px;
-
 }
 form{
     background-color: #ecf0f1;
-    width: 37.91%; /* 400px de 1055px (ancho de contenedor2) = 37.91% */
+    width: 37.91469194%; /* 400px de 1055px (ancho de contenedor2) = 37.91% */
     height: 400px;
-    margin: 40px 29.86% 0 29.86%; /* 315px de 1055px = 29.86% */
+    margin: 3.791469194% 29.85781991% 0 29.85781991%; /* 315px de 1055px = 29.86% */
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 label{
     font-family: 'Poppins', sans-serif;
@@ -108,17 +107,17 @@ select{
 input[type="checkbox"], #terminos{
     display: inline-block;
     vertical-align: top;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 input[type="checkbox"]{
     margin-left: 16.25%; /* 65px de 400px (ancho del form) = 16.25% */
 }
 #terminos{
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 input[type="submit"], input[type="reset"]{
     font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
+    border-radius: 0.3125%;
     width: 37.5%; /* 150px de 400px (ancho del form) = 37.5% */
     height: 30px;
 }
@@ -136,14 +135,14 @@ input[type="reset"]{
 footer{
     background-color: #01191f;
     color: #3b9dff;
-    padding: 0 0.36% 0 0.36%; /* 5px de 1400px = 0.36% */
+    padding: 0 0.3571428571% 0 0.3571428571%; /* 5px de 1400px = 0.36% */
     font-size: 5px;
     font-family: "Bitcount Grid Single", system-ui;
     text-align: center;
     margin-top: 10px;
 }
 footer i {
-    font-size: 32px;
-    margin: 10px;
+    font-size: 2rem;
+    margin: 0.7142857143%;
     color:#3b9dff;
 }
