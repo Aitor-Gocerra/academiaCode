@@ -1,0 +1,149 @@
+body{
+    width: 100%; /* era 1400px, ahora ocupa el 100% de la ventana */
+    background-color: #01191f;
+    margin: 0 auto;
+}
+header{
+    background-color: #01191f;
+    color: #3b9dff;
+    padding: 0 0.36% 0 0.36%; /* 5px de 1400px = 0.36% */
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+h1, p{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    height: 50px;
+}
+nav>a{
+    display: inline-block;
+    padding: 10px 0.36% 5px 0.36%; /* 5px de 1400px = 0.36% */
+    width: 6.07%; /* 85px de 1400px = 6.07% */
+    margin-top: 5px;
+    margin-left: 2.86%; /* 40px de 1400px = 2.86% */
+    text-decoration: none;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color:#3b9dff
+}
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6b6b;
+    transition: width 0.3s ease;
+}
+a:hover::after {
+    width: 100%;
+}
+#sesion{
+    width: 7.86%; /* 110px de 1400px = 7.86% */
+    float: right;
+}
+#logoSimple {
+    width: 21.43%; /* 300px de 1400px = 21.43% */
+    height: auto;
+}
+#logoAcad{
+    width: 28.57%; /* 400px de 1400px = 28.57% */
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+#contenedor1, #contenedor2{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+#contenedor1{
+    background-color: #01191f;
+    width: 21.43%; /* 300px de 1400px = 21.43% */
+    height: 700px;
+    color:#5dade2;
+    padding-top: 0;
+}
+#contenedor1 i{
+    font-size: 32px;
+    position: absolute;
+    top: 868px;
+    left: 19.29%; /* 270px de 1400px = 19.29% */
+    color: #ff6b6b;
+}
+#contenedor2{
+    background-color: #5dade2;
+    width: 75.36%; /* 1055px de 1400px = 75.36% */
+    height: 700px;
+
+}
+form{
+    background-color: #ecf0f1;
+    width: 37.91%; /* 400px de 1055px (ancho de contenedor2) = 37.91% */
+    height: 400px;
+    margin: 40px 29.86% 0 29.86%; /* 315px de 1055px = 29.86% */
+    padding: 10px;
+    border-radius: 8px;
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    color: #3b9dff;
+}
+input[type="text"]{
+    width: 29.5%; /* 118px de 400px (ancho del form) = 29.5% */
+    color: #34495e;
+}
+input[type="email"]{
+    width: 80%; /* 320px de 400px (ancho del form) = 80% */
+    margin-left: 5.25%; /* 21px de 400px = 5.25% */
+    color: #34495e;
+}
+select{
+    width: 63.75%; /* 255px de 400px (ancho del form) = 63.75% */
+}
+input[type="checkbox"], #terminos{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+input[type="checkbox"]{
+    margin-left: 16.25%; /* 65px de 400px (ancho del form) = 16.25% */
+}
+#terminos{
+    font-size: 10px;
+}
+input[type="submit"], input[type="reset"]{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    width: 37.5%; /* 150px de 400px (ancho del form) = 37.5% */
+    height: 30px;
+}
+input[type="submit"]{
+    margin-left: 12.5%; /* 50px de 400px (ancho del form) = 12.5% */
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: none;
+}
+input[type="reset"]{
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+}
+footer{
+    background-color: #01191f;
+    color: #3b9dff;
+    padding: 0 0.36% 0 0.36%; /* 5px de 1400px = 0.36% */
+    font-size: 5px;
+    font-family: "Bitcount Grid Single", system-ui;
+    text-align: center;
+    margin-top: 10px;
+}
+footer i {
+    font-size: 32px;
+    margin: 10px;
+    color:#3b9dff;
+}
