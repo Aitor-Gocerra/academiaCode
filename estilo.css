@@ -1,12 +1,12 @@
 body{
     width: 1400px;
     height: 900px;
-    background-color: #01191f;
+    background-color: #0B1220;
     margin: 0 auto;
 }
 header{
-    background-color: #01191f;
-    color: #3b9dff;
+    background-color: #0B1220;
+    color: #7C3AED;
     padding: 0 5px 0 5px ;
     font-size: 43px;
     font-family: 'Poppins', sans-serif;
@@ -28,7 +28,7 @@ nav>a{
     text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
-    color:#3b9dff
+    color:#7C3AED
 }
 a::after {
     content: '';
@@ -37,7 +37,7 @@ a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff6b6b;
+    background-color: #EF4444;
     transition: width 0.3s ease;
 }
 a:hover::after {
@@ -63,10 +63,10 @@ a:hover::after {
     padding: 10px;
 }
 #contenedor1{
-    background-color: #01191f;
+    background-color: #0B1220;
     width: 300px;
     height: 700px;
-    color:#5dade2;
+    color:#E5E7EB;
     padding-top: 0;
 }
 #contenedor1 i{
@@ -74,16 +74,16 @@ a:hover::after {
     position: absolute;
     top: 868px;
     left: 270px;
-    color: #ff6b6b;
+    color: #EF4444;
 }
 #contenedor2{
-    background-color: #5dade2;
+    background-color: #E5E7EB;
     width: 1055px;
     height: 700px;
 
 }
 form{
-    background-color: #ecf0f1;
+    background-color: #FFFFFF;
     width: 400px;
     height: 400px;
     margin: 40px 315px 0 315px;
@@ -92,16 +92,16 @@ form{
 }
 label{
     font-family: 'Poppins', sans-serif;
-    color: #3b9dff;
+    color: #7C3AED;
 }
 input[type="text"]{
     width: 118px;
-    color: #34495e;
+    color: #1F2937;
 }
 input[type="email"]{
     width: 320px;
     margin-left: 21px;
-    color: #34495e;
+    color: #1F2937;
 }
 select{
     width: 255px;
@@ -125,18 +125,18 @@ input[type="submit"], input[type="reset"]{
 }
 input[type="submit"]{
     margin-left: 50px;
-    background-color: #ff6b6b;
+    background-color: #EF4444;
     color: #ffffff;
     border: none;
 }
 input[type="reset"]{
-    background-color: #34495e;
+    background-color: #1F2937;
     color: #ffffff;
     border: none;
 }
 footer{
-    background-color: #01191f;
-    color: #3b9dff;
+    background-color: #0B1220;
+    color: #7C3AED;
     padding: 0 5px 0 5px ;
     font-size: 5px;
     font-family: "Bitcount Grid Single", system-ui;
@@ -146,6 +146,6 @@ footer{
 footer i {
     font-size: 32px;
     margin: 10px;
-    color:#3b9dff;
+    color:#7C3AED;
     /* o el tamaño que quieras: 2rem, 2em, etc. */
 }
