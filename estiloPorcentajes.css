@@ -1,5 +1,5 @@
 body{
-    width: 100%; /* era 1400px, ahora ocupa el 100% de la ventana */
+    width: 90%; /* era 1400px, ahora ocupa el 100% de la ventana, pero para centrarla hago el 80% */
     background-color: #0B1220;
     margin: 0 auto;
 }
@@ -68,12 +68,11 @@ a:hover::after {
     color:#E5E7EB;
     padding-top: 0;
 }
-#contenedor1 i{
-    font-size: 2rem;
-    position: absolute;
-    top: 868px;
-    left: 19.28571429%; /* 270px de 1400px = 19.29% */
-    color: #EF4444;
+#contenedor1 i {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
 }
 #contenedor2{
     background-color: #E5E7EB;
@@ -145,4 +144,180 @@ footer i {
     font-size: 2rem;
     margin: 0.7142857143%;
     color:#7C3AED;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === RESPONSIVIDAD GENERAL === */
+
+/* --- TABLETS (pantallas medianas, ~768px a 1024px) --- */
+/* Con esto adapto el diseño para tablets o portátiles pequeños.
+   Convierte los contenedores en bloques verticales, ajusta tamaños de texto,
+   y hace el formulario e imágenes más flexibles. */
+@media (max-width: 1024px) {
+
+    header {
+        font-size: 2rem; /* Reduce el tamaño del encabezado */
+    }
+
+    nav {
+        text-align: center; /* Centra los enlaces del menú */
+    }
+
+    nav > a {
+        width: auto; /* Quita el ancho fijo */
+        margin: 0.5rem;
+        display: inline-block;
+        font-size: 1rem; /* Texto más pequeño y legible */
+    }
+
+    #contenedor1, #contenedor2 {
+        width: 100%; /* Cada contenedor ocupa todo el ancho */
+        display: block; /* Se apilan verticalmente */
+        text-align: center; /* Centra su contenido */
+    }
+
+    #logoSimple {
+        width: 50%; /* Escala el logo */
+    }
+
+    #logoAcad {
+        width: 60%;
+    }
+
+    form {
+        width: 70%; /* Formulario más estrecho */
+        margin: 2rem auto; /* Centrado con márgenes automáticos */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 90%; /* Campos más anchos */
+        margin: 0.5rem 0;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 45%; /* Botones más grandes */
+        margin: 0.5rem 2%;
+    }
+
+    footer {
+        font-size: 0.75rem; /* Texto más legible */
+    }
+}
+
+/* --- MÓVILES (pantallas pequeñas, <768px) --- */
+/* El menu ahora se adapta verticalmente, el formulario se hace mas grande y los elementos se destribuyen por columna*/
+@media (max-width: 768px) {
+
+    header {
+        font-size: 1.5rem;
+        padding: 1rem 0; /* Más espacio arriba y abajo */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Menú en columna */
+        align-items: center; /* Centrado */
+    }
+
+    nav > a {
+        width: 80%; /* Enlaces más anchos y centrados */
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #contenedor1 i {
+        position: static;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    #contenedor1 p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    #logoSimple {
+        width: 70%; /* Logo más grande */
+    }
+
+    #contenedor2 {
+        width: 100%;
+        padding: 1rem;
+        height: auto; /* Altura automática */
+    }
+
+    #contenedor2 h1 {
+        font-size: 1.3rem;
+    }
+
+    form {
+        width: 90%; /* Ocupa casi todo el ancho */
+        margin: 1rem auto;
+        height: auto;
+        padding: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%; /* Campos al 100% */
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 48%;
+        margin: 0.5rem 1%;
+    }
+
+    footer {
+        font-size: 0.6rem;
+        padding: 1rem 0;
+    }
+
+    footer i {
+        font-size: 1.5rem;
+        margin: 0.3rem;
+    }
+}
+
+/* --- MÓVILES PEQUEÑOS (<480px) --- */
+/* Pantallas muy pequeñas, como móviles compactos. Aumenta la legibilidad y pone los botones en bloque. */
+@media (max-width: 480px) {
+
+    header {
+        font-size: 1.3rem; /* Encabezado más pequeño */
+    }
+
+    nav > a {
+        font-size: 0.9rem;
+        width: 100%; /* Enlaces ocupan todo el ancho */
+    }
+
+    #contenedor1 p {
+        font-size: 0.85rem; /* Texto más compacto */
+    }
+
+    form {
+        width: 95%; /* Ocupa casi todo el ancho del contenedor */
+        padding: 0.5rem;
+    }
+
+    label {
+        display: block; /* Etiquetas encima de los inputs */
+        margin: 0.5rem 0 0.2rem;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 100%; /* Botones a ancho completo */
+        margin: 0.5rem 0;
+    }
+
+    footer {
+        font-size: 0.5rem; /* Texto más pequeño */
+    }
 }
