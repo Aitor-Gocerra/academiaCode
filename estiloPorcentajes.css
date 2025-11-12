@@ -2,7 +2,8 @@
     width: 1400px;
 } */
 body{
-    width: 90%; /* era 1400px, ahora ocupa el 100% de la ventana, pero para centrarla hago el 80% */
+    width: 100%; /* era 1400px, ahora ocupa el 100% de la ventana */
+    max-width: 87.5rem; /* 1400px */
     background-color: #0B1220;
     margin: 0 auto;
 }
@@ -10,7 +11,7 @@ header{
     background-color: #0B1220;
     color: #7C3AED;
     padding: 0 0.3571428571% 0 0.3571428571%; /* 5px de 1400px = 0.3571428571% */
-    font-size: 2.6875rem;
+    font-size: 2.6875rem; /* 43px */
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -19,14 +20,14 @@ h1, p{
     font-family: 'Poppins', sans-serif;
 }
 nav{
-    height: auto; /* RECOMENDABLE */
+    height: 3.125rem; /* 50px - cambiado de auto a rem para mantener altura fija */
 }
 nav>a{
     display: inline-block;
-    padding: 0.7142857143% 0.3571428571% 0.3571428571% 0.3571428571%; /* El padding superior e inferior se calculan tbn con el width */
-    width: 6.071428571%; /* 85px de 1400px = 6.07% */
-    margin-top: 0.3571428571% ;
-    margin-left: 2.857142857%; /* 40px de 1400px = 2.86% */
+    padding: 0.625rem 0.3125rem 0.3125rem 0.3125rem; /* 10px 5px 5px 5px - cambiado a rem */
+    width: 5.3125rem; /* 85px - cambiado a rem para mantener tamaño */
+    margin-top: 0.3125rem; /* 5px - cambiado a rem */
+    margin-left: 2.5rem; /* 40px - cambiado a rem */
     text-decoration: none;
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -46,49 +47,50 @@ a:hover::after {
     width: 100%;
 }
 #sesion{
-    width: 7.857142857%; /* 110px de 1400px = 7.86% */
+    width: 6.875rem; /* 110px - cambiado a rem */
     float: right;
 }
 #logoSimple {
-    width: 21.42857143%; /* 300px de 1400px = 21.43% */
+    width: 100%; /* Ocupa el 100% del contenedor1 (300px) */
     height: auto;
 }
 #logoAcad{
-    width: 28.57142857%; /* 400px de 1400px = 28.57% */
+    width: 100%; /* Ocupa el 100% del form (400px) */
     height: auto;
-    margin-bottom: 2.142857143%;
-    margin-top: 1.071428571%;
+    margin-bottom: 1.875rem; /* 30px */
+    margin-top: 0.9375rem; /* 15px */
 }
 #contenedor1, #contenedor2{
     display: inline-block;
     vertical-align: top;
-    padding: 0.7142857143%;
+    padding: 0.625rem; /* 10px */
 }
 #contenedor1{
     background-color: #0B1220;
     width: 21.42857143%; /* 300px de 1400px = 21.43% */
-    height: auto;
+    min-height: 43.75rem; /* 700px - cambiado a min-height para adaptarse */
     color:#E5E7EB;
     padding-top: 0;
 }
 #contenedor1 i {
-    position: static;
+    font-size: 2rem; /* 32px */
     display: block;
     text-align: center;
-    margin: 1rem auto;
+    margin: 1rem auto; /* 16px */
+    color: #EF4444;
 }
 #contenedor2{
     background-color: #E5E7EB;
     width: 75.35714286%; /* 1055px de 1400px = 75.36% */
-    height: 700px;
+    min-height: 43.75rem; /* 700px - cambiado a min-height */
 }
 form{
     background-color: #FFFFFF;
     width: 37.91469194%; /* 400px de 1055px (ancho de contenedor2) = 37.91% */
-    height: 400px;
-    margin: 3.791469194% 29.85781991% 0 29.85781991%; /* 315px de 1055px = 29.86% */
-    padding: 10px;
-    border-radius: 0.5rem;
+    min-height: 25rem; /* 400px - cambiado a min-height para adaptarse al contenido */
+    margin: 2.5rem auto 0 auto; /* 40px arriba, centrado horizontal (antes 315px) */
+    padding: 0.625rem; /* 10px */
+    border-radius: 0.5rem; /* 8px */
 }
 label{
     font-family: 'Poppins', sans-serif;
@@ -97,31 +99,38 @@ label{
 input[type="text"]{
     width: 29.5%; /* 118px de 400px (ancho del form) = 29.5% */
     color: #1F2937;
+    padding: 0.3125rem; /* 5px - añadido para que coincida con pixeles */
+    box-sizing: border-box;
 }
 input[type="email"]{
     width: 80%; /* 320px de 400px (ancho del form) = 80% */
     margin-left: 5.25%; /* 21px de 400px = 5.25% */
     color: #1F2937;
+    padding: 0.3125rem; /* 5px - añadido para que coincida con pixeles */
+    box-sizing: border-box;
 }
 select{
     width: 63.75%; /* 255px de 400px (ancho del form) = 63.75% */
+    padding: 0.3125rem; /* 5px - añadido para que coincida con pixeles */
+    box-sizing: border-box;
 }
 input[type="checkbox"], #terminos{
     display: inline-block;
     vertical-align: top;
-    margin-top: 5%;
+    margin-top: 1.25rem; /* 20px */
 }
 input[type="checkbox"]{
     margin-left: 16.25%; /* 65px de 400px (ancho del form) = 16.25% */
 }
 #terminos{
-    font-size: 0.625rem;
+    font-size: 0.625rem; /* 10px */
+    width: 75%; /* Añadido para evitar desbordamiento */
 }
 input[type="submit"], input[type="reset"]{
     font-family: 'Poppins', sans-serif;
-    border-radius: 0.3125%;
+    border-radius: 0.3125rem; /* 5px */
     width: 37.5%; /* 150px de 400px (ancho del form) = 37.5% */
-    height: 30px;
+    height: 1.875rem; /* 30px */
 }
 input[type="submit"]{
     margin-left: 12.5%; /* 50px de 400px (ancho del form) = 12.5% */
@@ -137,15 +146,15 @@ input[type="reset"]{
 footer{
     background-color: #0B1220;
     color: #7C3AED;
-    padding: 0 0.3571428571% 0 0.3571428571%; /* 5px de 1400px = 0.36% */
-    font-size: 5px;
+    padding: 0 0.3125rem 0 0.3125rem; /* 5px */
+    font-size: 0.3125rem; /* 5px */
     font-family: "Bitcount Grid Single", system-ui;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px */
 }
 footer i {
-    font-size: 2rem;
-    margin: 0.7142857143%;
+    font-size: 2rem; /* 32px */
+    margin: 0.625rem; /* 10px */
     color:#7C3AED;
 }
 img {
@@ -218,20 +227,30 @@ img {
 
     header {
         font-size: 1.5rem;
-        padding: 1rem 0; /* Más espacio arriba y abajo */
+        padding: 1rem 0;
     }
 
     nav {
         display: flex;
-        flex-direction: column; /* Menú en columna */
-        align-items: center; /* Centrado */
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+        padding: 0.5rem 0; /* Añade padding interno */
+        margin-bottom: 1rem; /* Separa del contenido siguiente */
     }
 
     nav > a {
-        width: 80%; /* Enlaces más anchos y centrados */
+        width: 80%;
         margin: 0.5rem 0;
         font-size: 1rem;
         text-align: center;
+    }
+
+    #contenedor1 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        /* Ya no necesita margin-top extra si nav tiene margin-bottom */
     }
 
     #contenedor1 i {
@@ -246,13 +265,13 @@ img {
     }
 
     #logoSimple {
-        width: 70%; /* Logo más grande */
+        width: 70%;
     }
 
     #contenedor2 {
         width: 100%;
         padding: 1rem;
-        height: auto; /* Altura automática */
+        min-height: auto;
     }
 
     #contenedor2 h1 {
@@ -260,16 +279,16 @@ img {
     }
 
     form {
-        width: 90%; /* Ocupa casi todo el ancho */
+        width: 90%;
         margin: 1rem auto;
-        height: auto;
+        min-height: auto;
         padding: 1rem;
     }
 
     input[type="text"],
     input[type="email"],
     select {
-        width: 100%; /* Campos al 100% */
+        width: 100%;
     }
 
     input[type="submit"], input[type="reset"] {
@@ -287,7 +306,6 @@ img {
         margin: 0.3rem;
     }
 }
-
 /* --- MÓVILES PEQUEÑOS (<480px) --- */
 /* Pantallas muy pequeñas, como móviles compactos. Aumenta la legibilidad y pone los botones en bloque. */
 @media (max-width: 480px) {
