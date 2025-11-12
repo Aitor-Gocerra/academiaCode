@@ -1,151 +1,28 @@
-body{
-    width: 1400px;
-    height: 900px;
+body {
+    font-family: Arial, sans-serif;
     background-color: #0B1220;
-    margin: 0 auto;
-}
-header{
-    background-color: #0B1220;
-    color: #7C3AED;
-    padding: 0 5px 0 5px ;
-    font-size: 43px;
-    font-family: 'Poppins', sans-serif;
+    color: #E5E7EB;
     text-align: center;
+    padding: 50px;
 }
-h1, p{
-    margin:0;
-    font-family: 'Poppins', sans-serif;
-}
-nav{
-    height: 50px;
-}
-nav>a{
-    display: inline-block;
-    padding: 10px 5px 5px 5px;
-    width: 85px;
-    margin-top: 5px;
-    margin-left: 40px;
-    text-decoration: none;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    color:#7C3AED
-}
-a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #EF4444;
-    transition: width 0.3s ease;
-}
-a:hover::after {
-    width: 100%;
-}
-#sesion{
-    width: 110px;
-    float: right;
-}
-#logoSimple {
-    width: 300px;
-    height: auto;
-}
-#logoAcad{
-    width: 400px;
-    height: auto;
-    margin-bottom: 30px;
-    margin-top: 15px;
-}
-#contenedor1, #contenedor2{
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-}
-#contenedor1{
-    background-color: #0B1220;
-    width: 300px;
-    height: 700px;
-    color:#E5E7EB;
-    padding-top: 0;
-}
-#contenedor1 i{
-    font-size: 32px;
-    position: absolute;
-    top: 868px;
-    left: 270px;
-    color: #EF4444;
-}
-#contenedor2{
-    background-color: #E5E7EB;
-    width: 1055px;
-    height: 700px;
 
-}
-form{
-    background-color: #FFFFFF;
-    width: 400px;
-    height: 400px;
-    margin: 40px 315px 0 315px;
-    padding: 10px;
-    border-radius: 8px;
-}
-label{
-    font-family: 'Poppins', sans-serif;
+h1 {
     color: #7C3AED;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
 }
-input[type="text"]{
-    width: 118px;
-    color: #1F2937;
-}
-input[type="email"]{
-    width: 320px;
-    margin-left: 21px;
-    color: #1F2937;
-}
-select{
-    width: 255px;
-}
-input[type="checkbox"], #terminos{
+
+a {
     display: inline-block;
-    vertical-align: top;
-    margin-top: 20px;
-}
-input[type="checkbox"]{
-    margin-left: 65px;
-}
-#terminos{
-    font-size: 10px;
-}
-input[type="submit"], input[type="reset"]{
-    font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
-    width: 150px;
-    height: 30px;
-}
-input[type="submit"]{
-    margin-left: 50px;
-    background-color: #EF4444;
-    color: #ffffff;
-    border: none;
-}
-input[type="reset"]{
-    background-color: #1F2937;
-    color: #ffffff;
-    border: none;
-}
-footer{
-    background-color: #0B1220;
-    color: #7C3AED;
-    padding: 0 5px 0 5px ;
-    font-size: 5px;
-    font-family: "Bitcount Grid Single", system-ui;
-    text-align: center;
-    margin-top: 10px;
-}
-footer i {
-    font-size: 32px;
+    background-color: #7C3AED;
+    color: white;
+    padding: 15px 30px;
     margin: 10px;
-    color:#7C3AED;
-    /* o el tamaño que quieras: 2rem, 2em, etc. */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    background-color: #EF4444;
 }

@@ -1,3 +1,6 @@
+/* html{
+    width: 1400px;
+} */
 body{
     width: 90%; /* era 1400px, ahora ocupa el 100% de la ventana, pero para centrarla hago el 80% */
     background-color: #0B1220;
